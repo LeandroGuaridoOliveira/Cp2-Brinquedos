@@ -1,4 +1,4 @@
-# CP2 - Sistema de Brinquedos 🧸
+# CP2 - Sistema de Brinquedos 
 
 **FIAP – Curso de TDS | Checkpoint 2 – Spring Boot com Persistência**
 
@@ -6,7 +6,7 @@ Sistema REST para gerenciamento de brinquedos infantis (até 14 anos), desenvolv
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Java 21
 - Spring Boot 3.4.5
@@ -18,7 +18,7 @@ Sistema REST para gerenciamento de brinquedos infantis (até 14 anos), desenvolv
 
 ---
 
-## ⚙️ Configuração do Spring Initializr
+## Configuração do Spring Initializr
 
 | Campo       | Valor                        |
 |-------------|------------------------------|
@@ -38,7 +38,7 @@ Sistema REST para gerenciamento de brinquedos infantis (até 14 anos), desenvolv
 
 ---
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 cp2-brinquedos/
@@ -62,7 +62,7 @@ cp2-brinquedos/
 
 ---
 
-## 🗄️ Banco de Dados Oracle
+## Banco de Dados Oracle
 
 **Tabela:** `TDS_TB_Brinquedos`
 
@@ -79,7 +79,7 @@ cp2-brinquedos/
 
 ---
 
-## 🔗 Endpoints CRUD
+## Endpoints CRUD
 
 Base URL: `http://localhost:8080/brinquedos`
 
@@ -93,9 +93,9 @@ Base URL: `http://localhost:8080/brinquedos`
 
 ---
 
-## 📝 Exemplos de JSON para Testes no Postman
+## Exemplos de JSON para Testes no Postman
 
-### ✅ POST – Criar Brinquedo
+### POST – Criar Brinquedo
 **URL:** `POST http://localhost:8080/brinquedos`
 ```json
 {
@@ -120,7 +120,7 @@ Base URL: `http://localhost:8080/brinquedos`
 
 ---
 
-### ✅ POST – Outro exemplo
+### POST – Outro exemplo
 ```json
 {
   "nome": "Boneca Barbie Fashionista",
@@ -133,7 +133,7 @@ Base URL: `http://localhost:8080/brinquedos`
 
 ---
 
-### ✅ GET – Listar todos
+### GET – Listar todos
 **URL:** `GET http://localhost:8080/brinquedos`
 
 **Resposta (200 OK):**
@@ -160,7 +160,7 @@ Base URL: `http://localhost:8080/brinquedos`
 
 ---
 
-### ✅ GET – Buscar por ID
+### GET – Buscar por ID
 **URL:** `GET http://localhost:8080/brinquedos/1`
 
 **Resposta (200 OK):**
@@ -184,7 +184,7 @@ Base URL: `http://localhost:8080/brinquedos`
 
 ---
 
-### ✅ PUT – Atualizar Brinquedo
+### PUT – Atualizar Brinquedo
 **URL:** `PUT http://localhost:8080/brinquedos/1`
 ```json
 {
@@ -209,14 +209,14 @@ Base URL: `http://localhost:8080/brinquedos`
 
 ---
 
-### ✅ DELETE – Excluir por ID
+### DELETE – Excluir por ID
 **URL:** `DELETE http://localhost:8080/brinquedos/1`
 
 **Resposta (204 No Content):** sem corpo na resposta.
 
 ---
 
-### ❌ Exemplo de erro de validação (POST com dados inválidos)
+### Exemplo de erro de validação (POST com dados inválidos)
 ```json
 {
   "nome": "",
@@ -234,12 +234,3 @@ Base URL: `http://localhost:8080/brinquedos`
 }
 ```
 
----
-
-## ▶️ Como Executar
-
-1. Clone o repositório
-2. Abra no IntelliJ IDEA
-3. Configure `application.properties` com seu RM e senha Oracle FIAP
-4. Execute `BrinquedosApplication.java`
-5. Teste os endpoints no Postman na URL `http://localhost:8080/brinquedos`
